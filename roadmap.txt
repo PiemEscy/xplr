@@ -1,0 +1,13 @@
+XPLR SYSTEM, DEVELOPED USING NEXT.JS
+
+~ VERSIONS
+    - node: node-v22.16.0-win-x64
+
+~ DEVELOPMENT PROCESS
+    - run: npx create-next-app@latest xplr
+
+~ THEME
+    - run: npm install lucide-react
+        # icons
+    - run: npm install next-themes
+        # dark/light mode

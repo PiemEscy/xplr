@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer utilities {
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    .app-bg-theme-color {
+        @apply bg-white dark:bg-[#0a0a0a];
+    }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    .app-bg-theme-color-mirror {
+        @apply dark:bg-white bg-[#0a0a0a];
+    }
+
+    .app-text-theme-color {
+        @apply text-gray-800 dark:text-gray-300;
+    }
+
+    .app-text-hover-theme-color {
+        @apply hover:text-gray-900 dark:hover:text-zinc-50;
+    }
+
+    .app-text-theme-secondary-color {
+        @apply text-zinc-600 dark:text-zinc-400;
+    }
+
+    .app-text-theme-color-mirror {
+        @apply dark:text-gray-800 text-gray-300;
+    }
+
+    .app-text-theme-secondary-color-mirror {
+        @apply dark:text-zinc-800 text-zinc-400;
+    }
+
+    .app-text-theme-color-partner {
+        @apply text-yellow-800 dark:text-yellow-600;
+    }
+
+    .app-border-theme-color {
+        @apply border-zinc-400 dark:border-zinc-800;
+    }
+
+    .app-border-theme-color-mirror {
+        @apply dark:border-zinc-400 border-zinc-800;
+    }
+
+    .app-theme-color-button {
+        @apply disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 dark:bg-zinc-50 text-zinc-50 dark:text-zinc-900 hover:bg-zinc-900/90 dark:hover:bg-zinc-50/90;
+    }
+
+
+    .app-button-main-style {
+      @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 h-10 w-full cursor-pointer disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 dark:bg-zinc-50 text-zinc-50 dark:text-zinc-900 hover:bg-zinc-900/90 dark:hover:bg-zinc-50/90;
+    }
+
+    .app-button-secondary-style {
+      @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-zinc-400 dark:border-zinc-800 bg-white hover:bg-zinc-300 hover:text-zinc-900 h-10 w-full  dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 cursor-pointer;
+    }
+
+    .app-default-input-style {
+      @apply flex h-10 w-full rounded-md border border-zinc-400 dark:border-zinc-800 bg-white px-3 py-2 pl-10 text-sm ring-offset-zinc-400 placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-950 dark:ring-offset-zinc-950 dark:placeholder:text-zinc-400 dark:focus-visible:ring-zinc-300 transition-colors;
+    }
+
+    .app-default-font-size {
+        @apply text-xs sm:text-xs md:text-sm lg:text-sm;
+    }
+
+    .app-default-font-size-h2 {
+        @apply text-sm sm:text-base md:text-base lg:text-lg;
+    }
+
+    .app-default-font-size-h3 {
+        @apply text-lg sm:text-lg md:text-lg lg:text-xl;
+    }
+
+    .app-default-font-size-h4 {
+        @apply text-xl sm:text-xl md:text-xl lg:text-3xl;
+    }
+    
+    .app-default-font-size-h5 {
+        @apply text-xl sm:text-xl md:text-xl lg:text-4xl;
+    }
+
 }
