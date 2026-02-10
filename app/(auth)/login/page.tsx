@@ -3,24 +3,16 @@
 import { Mail, Lock, ArrowRight, Github, Chrome} from "lucide-react";
 import Link from "next/link";
 import ThemeToggleComponent from "@/app/components/ThemeToggleComponent";
-import ProfilePhotoComponent from "./login_components/ProfilePhotoComponent";
-import SocialLinkComponent from "./login_components/SocialLinkComponent";
 import DefaultLabelComponent from "@/app/components/DefaultLabelComponent";
 
 export default function LoginPage() {
-
 
     return (
         <div className="flex min-h-screen w-full app-bg-theme-color transition-colors">
 
             <ThemeToggleComponent />
-            {/* Left Side - Hero / Branding */}
-            <div className="hidden lg:flex lg:flex-col w-1/2 relative app-bg-theme-color-mirror items-center justify-center overflow-hidden -mt-30">
-                <ProfilePhotoComponent/>
-                <SocialLinkComponent/>
-            </div>
 
-            {/* Right Side - Login Form */}
+            {/* Login Form */}
             <div className="flex-1 flex flex-col justify-center items-center p-8 sm:p-12 lg:p-16 relative">
                 <div className="w-full max-w-sm space-y-8">
                     <div className="text-center">
