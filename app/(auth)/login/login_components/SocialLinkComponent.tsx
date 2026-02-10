@@ -34,7 +34,7 @@ export default function SocialLinkComponent({
 
     return (
         <div
-            className={`${className} p-2 flex justify-center space-x-8 border-b border-t app-border-theme-color-mirror`}
+            className={`${className} p-2 flex justify-center space-x-8 border-b border-t  border-zinc-800`}
         >
             {loading
                 ? // Skeleton placeholders
@@ -54,7 +54,7 @@ export default function SocialLinkComponent({
                               href={link}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="app-text-theme-color-mirror hover:text-blue-600 transition"
+                              className=" text-neutral-400 hover:text-blue-600 transition"
                           >
                               <Icon className="w-4 h-4" />
                           </a>

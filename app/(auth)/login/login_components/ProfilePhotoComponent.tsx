@@ -29,17 +29,15 @@ export default function ProfilePhotoComponent({
                 </>
             ) : (
                 <>
-                    <div
-                        className={`${profilePhotoDimension} rounded-full bg-center bg-cover`}
-                        style={{ backgroundImage: `url(${getProfilePhoto()})` }}
-                    />
-                    <h2 className="app-default-font-size-h5 font-bold app-text-theme-color-partner">
-                        XPLR
-                    </h2>
-                    <p className="app-default-font-size app-text-theme-secondary-color-mirror leading-relaxed">
-                        EXPLORE - My personal playground to explore ideas, test new features, 
-                        and see what I can create next.
-                    </p>
+                    <div className="relative z-10 max-w-md text-center">
+                        <div
+                            className={`${profilePhotoDimension} rounded-full bg-center bg-cover`}
+                            style={{ backgroundImage: `url(${getProfilePhoto()})` }}
+                        />
+                        <p className="text-lg text-neutral-400 leading-relaxed">
+                            My personal playground to explore ideas, test new features, and see what I can create next.
+                        </p>
+                    </div>
                 </>
             )}
         </div>
