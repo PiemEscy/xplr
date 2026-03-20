@@ -9,7 +9,7 @@
     }
 
     .app-bg-theme-color-secondary {
-        @apply bg-gray-100 dark:bg-[#0a0a0a];
+        @apply bg-gray-200 dark:bg-[#0a0a0a];
     }
 
     .app-bg-theme-color-mirror {
