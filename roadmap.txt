@@ -11,3 +11,53 @@ XPLR SYSTEM, DEVELOPED USING NEXT.JS
         # icons
     - run: npm install next-themes
         # dark/light mode
+
+
+
+~ FILE STRUCTURE SAMPLE
+
+my-app/
+│── app/                     # Main routing system (like routes + views)
+│   ├── layout.js            # Global layout (like a master Blade layout)
+│   ├── page.js              # Home page
+│   ├── dashboard/
+│   │   ├── page.js
+│   │   ├── layout.js
+│   │   └── components/
+│   ├── api/                 # Backend API routes (like controllers)
+│   │   └── users/
+│   │       └── route.js
+│   └── (auth)/              # Route group (no URL impact)
+│       ├── login/
+│       │   └── page.js
+│       └── register/
+│           └── page.js
+│
+│── components/              # Reusable UI components (global)
+│   ├── ui/
+│   ├── layout/
+│   └── forms/
+│
+│── lib/                     # Helpers / utilities (like Laravel helpers)
+│   ├── db.js
+│   ├── utils.js
+│   └── api.js
+│
+│── services/                # Business logic / API calls
+│   ├── userService.js
+│   └── authService.js
+│
+│── hooks/                   # Custom React hooks
+│   ├── useAuth.js
+│   └── useFetch.js
+│
+│── store/                   # State management (Zustand/Redux)
+│   └── useStore.js
+│
+│── styles/                  # Global styles (if needed)
+│
+│── public/                  # Static files
+│
+│── middleware.js            # Auth / request middleware
+│── next.config.js
+│── package.json

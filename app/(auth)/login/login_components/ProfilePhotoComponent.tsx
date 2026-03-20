@@ -1,4 +1,4 @@
-import SkeletonLineComponent from "@/app/components/SkeletonLineComponent";
+import SkeletonLineComponent from "@/components/common/SkeletonLineComponent";
 
 type ProfilePhotoSectionProps = {
     className?: string;

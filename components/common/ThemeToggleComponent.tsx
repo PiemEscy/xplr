@@ -10,9 +10,9 @@ const { resolvedTheme, setTheme } = useTheme();
         setMounted(true);
     }, []);
 
-        return ( 
-            <>
-                {mounted && (
+            return ( 
+                <>
+                    {mounted && (
                     <button
                         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
                         className="absolute top-4 right-4 z-50 p-2 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all cursor-pointer"

@@ -2,8 +2,8 @@
 
 import { Mail, Lock, ArrowRight, Github, Chrome, ShieldCheck } from "lucide-react";
 import Link from "next/link";
-import ThemeToggleComponent from "@/app/components/ThemeToggleComponent";
-import DefaultLabelComponent from "@/app/components/DefaultLabelComponent";
+import ThemeToggleComponent from "@/components/common/ThemeToggleComponent";
+import DefaultLabelComponent from "@/components/common/DefaultLabelComponent";
 import AbstractBackgroundComponent from "./login_components/AbstractBackgroundComponent";
 import ProfilePhotoComponent from "./login_components/ProfilePhotoComponent";
 import SocialLinkComponent from "./login_components/SocialLinkComponent";
