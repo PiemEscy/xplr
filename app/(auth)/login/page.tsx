@@ -15,7 +15,7 @@ export default function LoginPage() {
             <ThemeToggleComponent />
 
             {/* Left Side: Visual/Branding Section (Hidden on mobile) */}
-            <div className="hidden lg:flex lg:flex-col w-7/12 relative bg-neutral-900 items-center justify-center p-12 -mt-30">
+            <div className="hidden lg:flex lg:flex-col w-5/12 relative bg-neutral-900 items-center justify-center p-12 -mt-30">
                 <AbstractBackgroundComponent />
                 <ProfilePhotoComponent />
                 <SocialLinkComponent />
