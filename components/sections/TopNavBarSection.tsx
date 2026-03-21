@@ -95,7 +95,7 @@ export default function TopNavBarSection() {
         <div className="flex items-center gap-3">
             <Link
                 href="login"
-                className="group hidden sm:flex items-center rounded-md app-default-font-size font-medium ring-offset-white transition-colors p-2 cursor-pointer disabled:pointer-events-none disabled:opacity-50 bg-zinc-800 dark:bg-gray-400 text-zinc-50 dark:text-zinc-900 hover:bg-zinc-900/90 dark:hover:bg-zinc-50/90"
+                className="group hidden sm:flex items-center rounded-md app-default-font-size font-medium ring-offset-white transition-colors p-3 cursor-pointer disabled:pointer-events-none disabled:opacity-50 app-button-theme-color"
             >
                 Sign In
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

@@ -1,6 +1,7 @@
 
-import TopNavBarSection from "../sections/TopNavBarSection";
 import { ReactNode } from "react";
+import TopNavBarSection from "../sections/TopNavBarSection";
+import FooterSection from "../sections/FooterSection";
 
 type DefaultLayoutProps = {
     mainContent?: ReactNode;
@@ -21,6 +22,8 @@ export default function DefaultLayout({mainContent} : DefaultLayoutProps) {
                 </div>
 
             </div>
+
+            <FooterSection />
         </>
     );
 }

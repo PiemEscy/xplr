@@ -12,10 +12,14 @@ export default function LoginPage() {
 
     return (
         <div className="flex min-h-screen w-full app-bg-theme-color transition-colors overflow-hidden">
+
+            {/* Top subtle glow overlay */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[300px] bg-indigo-500/10 blur-[120px] rounded-full pointer-events-none -translate-y-1/2" />
+
             <ThemeToggleComponent />
 
             {/* Left Side: Visual/Branding Section (Hidden on mobile) */}
-            <div className="hidden lg:flex lg:flex-col w-5/12 relative bg-neutral-900 items-center justify-center p-12 -mt-30">
+            <div className="hidden lg:flex lg:flex-col w-5/12 relative bg-[#0B0F19] items-center justify-center p-12 -mt-30">
                 <AbstractBackgroundComponent />
                 <ProfilePhotoComponent />
                 <SocialLinkComponent />
@@ -72,7 +76,7 @@ export default function LoginPage() {
 
                         <button
                             type="submit"
-                            className="app-button-main-style w-full flex items-center justify-center group"
+                            className="flex items-center justify-center group inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 h-10 w-full cursor-pointer disabled:pointer-events-none disabled:opacity-50 app-button-theme-color"
                         >
                             Sign in
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
