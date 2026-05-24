@@ -122,31 +122,6 @@ export default function FooterSection({
               </ul>
             </div>
             
-            {/* Stay In Touch */}
-            <div className="flex-1 min-w-[200px] lg:max-w-[240px]">
-              <h3 className="text-sm font-semibold text-white mb-5">Stay In Touch</h3>
-              <p className="text-sm text-slate-400 mb-5 leading-relaxed">
-                Subscribe now for exclusive insights and offers!
-              </p>
-              
-              <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
-                <div className="relative">
-                  <input 
-                    type="email" 
-                    placeholder="Enter your email" 
-                    className="w-full bg-slate-900/50 border border-slate-700/60 rounded-full py-2.5 px-5 text-sm text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all text-center placeholder:text-slate-500"
-                    required
-                  />
-                </div>
-                <button 
-                  type="submit" 
-                  className="w-full app-button-theme-color font-medium rounded-full py-2.5 text-sm transition-all shadow-[0_0_15px_rgba(139,92,246,0.25)] hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] cursor-pointer"
-                >
-                  Subscribe Now
-                </button>
-              </form>
-            </div>
-            
           </div>
         </div>
 

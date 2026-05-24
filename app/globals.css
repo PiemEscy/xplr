@@ -4,65 +4,6 @@
 
 @layer utilities {
 
-    .app-bg-theme-color {
-        @apply bg-white dark:bg-[#0a0a0a];
-    }
-
-    .app-bg-theme-color-secondary {
-        @apply bg-gray-200 dark:bg-[#0a0a0a];
-    }
-
-    .app-bg-theme-color-mirror {
-        @apply dark:bg-white bg-[#0a0a0a];
-    }
-
-    .app-text-theme-color {
-        @apply text-gray-800 dark:text-gray-300;
-    }
-
-    .app-text-hover-theme-color {
-        @apply hover:text-[#0a0a0a] dark:hover:text-zinc-50;
-    }
-
-    .app-text-theme-secondary-color {
-        @apply text-slate-600 dark:text-slate-400;
-    }
-
-    .app-text-theme-color-mirror {
-        @apply dark:text-gray-800 text-gray-300;
-    }
-
-    .app-text-theme-secondary-color-mirror {
-        @apply dark:text-zinc-800 text-zinc-400;
-    }
-
-    .app-border-theme-color {
-        @apply border-zinc-200 dark:border-zinc-900;
-    }
-
-    .app-border-theme-color-mirror {
-        @apply dark:border-zinc-400 border-zinc-800;
-    }
-
-    .app-theme-color-button {
-        @apply disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 dark:bg-zinc-50 text-zinc-50 dark:text-zinc-900 hover:bg-zinc-900/90 dark:hover:bg-zinc-50/90;
-    }
-
-    .app-button-theme-color {
-        @apply bg-[#3E2C5C] hover:bg-purple-500 text-white;
-    }
-
-    .app-button-main-style {
-      @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 h-10 w-full cursor-pointer disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 dark:bg-gray-400 text-zinc-50 dark:text-zinc-900 hover:bg-zinc-900/90 dark:hover:bg-zinc-50/90;
-    }
-
-    .app-button-secondary-style {
-      @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-zinc-400 dark:border-zinc-800 bg-white hover:bg-zinc-300 hover:text-zinc-900 h-10 w-full  dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 cursor-pointer;
-    }
-
-    .app-default-input-style {
-      @apply flex h-10 w-full rounded-md border border-zinc-400 dark:border-zinc-800 bg-white px-3 py-2 pl-10 text-sm ring-offset-zinc-400 placeholder:text-zinc-500 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-950 dark:ring-offset-zinc-950 dark:placeholder:text-zinc-400 transition-colors;
-    }
     .app-default-font-size {
         @apply text-xs sm:text-xs md:text-sm lg:text-sm;
     }
@@ -82,9 +23,4 @@
     .app-default-font-size-h5 {
         @apply text-xl sm:text-xl md:text-xl lg:text-4xl;
     }
-
-    .app-bg-theme-color-skeleton {
-        @apply  bg-zinc-300 dark:bg-zinc-600;
-    }
-
 }
