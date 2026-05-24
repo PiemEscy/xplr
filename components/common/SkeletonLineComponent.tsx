@@ -19,7 +19,7 @@ export default function SkeletonLineComponent({
 
     return (
         <div
-            className={`${className} animate-pulse bg-zinc-300 dark:bg-zinc-600 ${shapeClass}`}
+            className={`${className} animate-pulse app-bg-theme-color-skeleton ${shapeClass}`}
         />
     );
 }

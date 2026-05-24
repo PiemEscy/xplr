@@ -14,7 +14,7 @@ export default function DefaultLabelComponent({
     return (
         <label
             htmlFor={htmlFor}
-            className={`${className} app-default-font-size leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-slate-600 dark:text-slate-400 transition-colors`}
+            className={`${className} app-default-font-size leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 app-text-theme-secondary-color transition-colors`}
         >
             {label}
         </label>
