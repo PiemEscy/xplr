@@ -77,30 +77,30 @@ export function Navbar({ title, breadcrumbs, onMenuClick }: NavbarProps) {
               />
               <button
                 onClick={() => setSearchOpen(false)}
-                className="flex h-8 w-8 items-center justify-center rounded-md text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                className="app-navbar-button-style"
                 aria-label="Close search"
               >
-                <X size={13} />
+                <X className="h-5 w-5" />
               </button>
             </div>
           ) : (
             <button
               onClick={() => setSearchOpen(true)}
-              className="flex h-8 w-8 items-center justify-center rounded-md text-zinc-400 hover:bg-zinc-100 hover:text-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-zinc-300 transition-colors"
+              className="app-navbar-button-style"
               aria-label="Search"
             >
-              <Search size={15} />
+              <Search className="h-5 w-5" />
             </button>
           )}
         </div>
 
         {/* Notifications */}
         <button
-          className="relative flex h-8 w-8 items-center justify-center rounded-md text-zinc-400 hover:bg-zinc-100 hover:text-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-zinc-300 transition-colors"
+          className="app-navbar-button-style"
           aria-label="Notifications"
         >
-          <Bell size={15} />
-          <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-zinc-900 dark:bg-white" />
+          <Bell className="h-5 w-5" />
+          {/* <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-zinc-900 dark:bg-white" /> */}
         </button>
 
         {/* Theme toggle */}
@@ -110,7 +110,7 @@ export function Navbar({ title, breadcrumbs, onMenuClick }: NavbarProps) {
         <div className="relative ml-1" ref={dropdownRef}>
           <button
             onClick={() => setDropdownOpen((p) => !p)}
-            className="flex h-8 items-center gap-1.5 rounded-md px-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="flex h-8 items-center gap-1.5 rounded-md px-1.5 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer"
             aria-label="User menu"
             aria-expanded={dropdownOpen}
           >

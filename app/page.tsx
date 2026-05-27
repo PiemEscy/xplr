@@ -15,18 +15,18 @@ export default function Home() {
         <div className="relative z-10 max-w-4xl mx-auto space-y-6">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border app-border-theme-color app-bg-theme-color px-4 py-1.5 text-sm app-text-theme-secondary-color">
+          <div className="inline-flex items-center gap-2 rounded-full border app-border-theme-color app-bg-theme-color px-4 py-1.5 app-default-font-size app-text-theme-secondary-color">
             <span className="w-2 h-2 rounded-full bg-emerald-500" />
             Personal Creative Playground
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight app-text-theme-color leading-tight">
+          <h1 className="app-default-font-size-h7 font-bold tracking-tight app-text-theme-color leading-tight">
             Explore · Create · Experiment
           </h1>
 
           {/* Sub-headline */}
-          <p className="text-base sm:text-lg app-text-theme-secondary-color max-w-2xl mx-auto leading-relaxed">
+          <p className="app-default-font-size-h2 app-text-theme-secondary-color max-w-2xl mx-auto leading-relaxed">
             A space to explore ideas, build experiments, test new features, and
             turn curiosity into something real.
           </p>
