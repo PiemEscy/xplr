@@ -1,15 +1,14 @@
 // app/dash/page.tsx
 "use client";
 import { AppLayout } from "@/components/layout/AppLayout";
-import { PageHeader } from "@/components/ui/PageHeader";
 
 export default function DashboardPage() {
   return (
     <AppLayout
-      breadcrumbs={[{ label: "Dashboard" }]}
+      breadcrumbs={[{ label: "xplr" }, { label: "Dashboard" }]}
     >
-      hello
       {/* page content */}
+      Hello World!
     </AppLayout>
   );
 }

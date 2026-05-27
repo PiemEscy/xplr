@@ -25,7 +25,7 @@ export function SidebarItem({ label, href, icon: Icon, badge, collapsed }: Sideb
         "transition-colors duration-100",
         "hover:bg-zinc-100 dark:hover:bg-zinc-800/60",
         isActive
-          ? "bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-white"
+          ? "bg-zinc-300 text-zinc-900 dark:bg-zinc-800 dark:text-white"
           : "text-zinc-500 dark:text-zinc-400",
         collapsed ? "justify-center px-0 w-10 mx-auto" : "",
       ]

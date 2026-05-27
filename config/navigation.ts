@@ -26,7 +26,7 @@ export const navigationConfig: NavGroup[] = [
   {
     label: "Main",
     items: [
-      { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+      { label: "Dashboard", href: "/xplr/dashboard", icon: LayoutDashboard },
     ],
   },
   {

@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
     const authToken = request.cookies.get(AUTH_COOKIE)?.value;
 
-    // if (pathname.startsWith("/dashboard")) {
+    // if (pathname.startsWith("/xplr")) {
     //     if (!authToken) {
     //         const loginUrl = new URL("/login", request.url);
     //         loginUrl.searchParams.set("callbackUrl", pathname);
@@ -15,12 +15,12 @@ export function middleware(request: NextRequest) {
     // }
 
     // if (pathname === "/login" && authToken) {
-    //     return NextResponse.redirect(new URL("/dashboard", request.url));
+    //     return NextResponse.redirect(new URL("/xplr", request.url));
     // }
 
     return NextResponse.next();
 }
 
 export const config = {
-    matcher: ["/dashboard/:path*", "/login"],
+    matcher: ["/xplr/:path*", "/login"],
 };
