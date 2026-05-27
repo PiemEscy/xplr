@@ -9,7 +9,7 @@
     }
 
     .app-bg-theme-color-secondary {
-        @apply bg-gray-200 dark:bg-[#0a0a0a];
+        @apply bg-gray-900 dark:bg-[#0a0a0a];
     }
 
     .app-bg-theme-color-mirror {
@@ -48,10 +48,6 @@
         @apply disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 dark:bg-zinc-50 text-zinc-50 dark:text-zinc-900 hover:bg-zinc-900/90 dark:hover:bg-zinc-50/90;
     }
 
-    .app-button-theme-color {
-        @apply bg-[#8c7851] text-white;
-    }
-
     .app-button-main-style {
       @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 h-10 w-full cursor-pointer disabled:pointer-events-none disabled:opacity-50;
     }
@@ -63,6 +59,7 @@
     .app-default-input-style {
       @apply flex h-10 w-full rounded-md border border-zinc-400 dark:border-zinc-800 bg-white px-3 py-2 pl-10 text-sm ring-offset-zinc-400 placeholder:text-zinc-500 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-950 dark:ring-offset-zinc-950 dark:placeholder:text-zinc-400 transition-colors;
     }
+
     .app-default-font-size {
         @apply text-xs sm:text-xs md:text-sm lg:text-sm;
     }
@@ -85,6 +82,39 @@
 
     .app-bg-theme-color-skeleton {
         @apply  bg-zinc-300 dark:bg-zinc-600;
+    }
+
+    /* App shell layout */
+    .app-sidebar-bg {
+        @apply bg-white dark:bg-zinc-950 border-r border-zinc-200 dark:border-zinc-800;
+    }
+
+    .app-navbar-bg {
+        @apply bg-white/90 dark:bg-zinc-950/90 border-b border-zinc-200 dark:border-zinc-800 backdrop-blur-md;
+    }
+
+    .app-nav-item {
+        @apply text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/60 hover:text-zinc-700 dark:hover:text-zinc-200;
+    }
+
+    .app-nav-item-active {
+        @apply bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white;
+    }
+
+    .app-page-bg {
+        @apply bg-zinc-50 dark:bg-zinc-950;
+    }
+
+    .app-card {
+        @apply rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm;
+    }
+
+    .app-card-header {
+        @apply border-b border-zinc-100 dark:border-zinc-800 px-5 py-4;
+    }
+
+    .app-card-body {
+        @apply px-5 py-4;
     }
 
 }

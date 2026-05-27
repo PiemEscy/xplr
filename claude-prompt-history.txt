@@ -1,0 +1,186 @@
+!! -----------------
+!! 05272026 2:00pm
+!! -----------------
+
+Create a reusable application layout architecture in components\layout
+
+Goal:
+Build a scalable and maintainable reusable layout system that can be reused across multiple pages such as dashboard, users, reports, settings, and authentication pages.
+
+
+Requirements:
+- Use Next.js App Router structure
+- Use reusable components
+- Separate layout concerns properly
+- Clean folder architecture
+- Production-ready code
+- Easy to maintain and extend
+
+Layout Structure:
+- Collapsible sidebar
+- Sticky top navbar
+- Main content area
+- Responsive mobile navigation
+- Reusable page container
+- Reusable header section
+- Optional breadcrumb support
+
+Sidebar Requirements:
+- Navigation groups
+- Active route highlighting
+- Icon support using lucide-react
+- Smooth collapse animation
+- Mobile drawer support
+- Reusable navigation configuration array
+
+Navbar Requirements:
+- Page title
+- Search input
+- Notification button
+- User profile dropdown
+- Responsive behavior
+
+Architecture Requirements:
+- Separate components into folders
+- Reusable layout wrapper
+- Shared utility components
+- Avoid monolithic files
+- Proper state management for sidebar toggle
+- Clean import structure
+
+Suggested Structure:
+- components/layout/
+- components/navigation/
+- components/ui/
+- hooks/
+- lib/
+- config/
+
+Design Style:
+- Modern SaaS aesthetic
+- Similar to Linear + Vercel
+- Compact professional spacing
+- Soft shadows
+- Rounded 2xl cards
+- Clean typography
+- Smooth transitions
+
+UX Requirements:
+- Responsive on all devices
+- Smooth animations
+- Proper spacing hierarchy
+- Accessible navigation
+- Sticky navigation areas
+
+Technical Requirements:
+- Use Tailwind utility classes only
+- Use shadcn/ui components where appropriate
+- Use React hooks cleanly
+- Avoid unnecessary re-renders
+- Use reusable navigation config objects
+
+Output:
+- Folder structure
+- Reusable layout components
+- Example usage
+- Clean scalable architecture
+- Production-ready implementation
+
+
+
+!! -----------------
+!! 05272026 2:30pm
+!! -----------------
+
+Create a reusable GuestLayout architecture inside components/layout for a Next.js App Router project using TypeScript and Tailwind CSS.
+
+Goal:
+Build a lightweight, reusable layout for public-facing pages such as:
+- Homepage (app\page.tsx)
+- Login (app\(auth)\login\page.tsx)
+- Register (app\(auth)\register\page.tsx)
+- Forgot Password (app\(auth)\forgot-password\page.tsx)
+- Any unauthenticated pages
+
+This layout should be separate from the AppLayout  and must not include sidebar navigation.
+
+Requirements:
+- Use Next.js App Router structure
+- Use reusable components
+- Clean separation from AppLayout system
+- Production-ready and scalable
+- Minimal but modern design
+
+Layout Structure:
+- Simple top navbar (optional logo + links only)
+- Centered content area
+- Full height responsive layout
+- Footer (optional)
+- No sidebar
+- No admin navigation
+
+Navbar Requirements:
+- Left: Logo or brand name
+- Right: Optional links (Login, Register)
+- Minimal and clean
+- Sticky optional
+
+Page Container:
+- Center content horizontally and vertically when needed (e.g. login page)
+- Allow full-width layout for homepage
+- Responsive padding system
+- Max width container support (e.g. max-w-6xl, max-w-md for auth pages)
+
+Design Style:
+- Modern SaaS minimalist style
+- Similar to Notion, Vercel, and Stripe landing pages
+- Clean whitespace
+- Soft background
+- Subtle gradients allowed but not heavy
+- Rounded cards (xl/2xl)
+- Light shadowing
+
+UX Requirements:
+- Fully responsive
+- Mobile-first design
+- Smooth transitions
+- Proper spacing and typography hierarchy
+- Accessible layout
+
+Architecture Requirements:
+- Separate from AppLayout (no shared sidebar logic)
+- Reusable layout wrapper: GuestLayout
+- Shared UI components (Button, Input, Card)
+- Clean folder structure under components/layout/guest
+- Avoid monolithic files
+
+Suggested Structure:
+- components/layout/guest/
+  - GuestLayout.tsx
+  - GuestNavbar.tsx
+  - GuestContainer.tsx
+- components/ui/
+- config/
+
+Usage Examples:
+- Wrap homepage with GuestLayout (full width mode)
+- Wrap login/register pages with centered mode
+
+Behavior Requirements:
+- Support two modes:
+  1. fullWidth layout (for landing page)
+  2. centered layout (for auth pages)
+
+Technical Requirements:
+- Use Tailwind CSS only
+- Use shadcn/ui components where appropriate
+- Use React Server Components where possible
+- Keep components reusable and composable
+- Avoid duplication with AppLayout
+
+Output:
+- Folder structure
+- GuestLayout implementation
+- Navbar + container components
+- Example usage in pages (home + login)
+- Clean scalable architecture

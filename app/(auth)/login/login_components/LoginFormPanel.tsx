@@ -9,9 +9,10 @@ export default function LoginFormPanel() {
             {/* Back to Homepage Button */}
             <Link
                 href="/"
-                className="group absolute top-6 left-6 inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-neutral-200 bg-white/80 hover:bg-neutral-100 dark:bg-transparent dark:text-white dark:hover:bg-neutral-800 dark:border-neutral-900 backdrop-blur-sm text-sm font-medium text-neutral-700 transition-all duration-200"
+                className="group absolute top-6 left-6 inline-flex items-center gap-2 text-sm font-medium app-text-theme-secondary-color app-text-hover-theme-color transition-colors"
             >
                 <ArrowLeft className="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" />
+                Back to home
             </Link>
 
             <div className="w-full max-w-sm space-y-8">
@@ -64,7 +65,7 @@ export default function LoginFormPanel() {
 
                     <button
                         type="submit"
-                        className="group flex items-center justify-center app-button-main-style app-button-theme-color"
+                        className="group flex items-center justify-center app-button-main-style app-theme-color-button"
                     >
                         Sign in
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
